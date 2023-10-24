@@ -55,6 +55,7 @@ export async function createEditCabin(newCabin, id) {
       "Cabin image could not be uploaded and cabin was not created"
     );
   }
+
   return data;
 }
 
