@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Logo from "./Logo";
 import MainNav from "./MainNav";
-// import Uploader from "../data/Uploader";
+import Uploader from "../data/Uploader";
 
 const StyledSideber = styled.aside`
   background-color: var(--color-grey-0);
