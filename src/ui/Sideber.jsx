@@ -13,6 +13,10 @@ const StyledSideber = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  @media only screen and (max-width: 670px) {
+    display: none;
+  }
 `;
 
 function Sideber() {
