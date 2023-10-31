@@ -5,8 +5,6 @@ import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
 import { useSignup } from "./useSignUp";
 
-// Email regex: /\S+@\S+\.\S+/
-
 function SignupForm() {
   const { signup, isLoading } = useSignup();
 
