@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { HiMiniSquaresPlus } from "react-icons/hi2";
+import Logout from "../features/authentication/Logout";
 
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
@@ -16,9 +17,11 @@ const HamburgerButton = styled.button`
 function Header() {
   return (
     <StyledHeader>
-      <HamburgerButton>
+      {/* <HamburgerButton>
         <HiMiniSquaresPlus />
-      </HamburgerButton>
+      </HamburgerButton> */}
+
+      <Logout />
     </StyledHeader>
   );
 }
