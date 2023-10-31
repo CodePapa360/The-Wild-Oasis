@@ -39,7 +39,6 @@ function SignupForm() {
           {...register("email", {
             required: "This field is required",
             pattern: {
-              // test
               value: /\S+@\S+\.\S+/,
               message: "Please provide a valid email address.",
             },
