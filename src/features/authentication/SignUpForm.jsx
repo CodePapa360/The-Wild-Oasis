@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
+import { useSignup } from "./useSignUp";
+
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
-import { useSignup } from "./useSignUp";
 
 function SignupForm() {
   const { signup, isLoading } = useSignup();
