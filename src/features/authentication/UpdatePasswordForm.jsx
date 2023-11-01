@@ -31,7 +31,7 @@ function UpdatePasswordForm() {
             required: "This field is required",
             minLength: {
               value: 8,
-              message: "Password needs a minimum of 8 characters",
+              message: "New password needs a minimum of 8 characters",
             },
           })}
         />
