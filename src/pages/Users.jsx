@@ -1,4 +1,4 @@
-import SignupForm from "../features/authentication/SignupForm";
+import SignupForm from "../features/authentication/Signup";
 
 import Heading from "../ui/Heading";
 
