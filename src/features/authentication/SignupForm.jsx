@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useSignup } from "./useSignUp";
+import { useSignup } from "./useSignup";
 
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
