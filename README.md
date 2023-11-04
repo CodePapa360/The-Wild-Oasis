@@ -50,6 +50,7 @@ The Wild Oasis hotel management app is a full-featured React web application tha
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+- [Installation](#installation)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -93,7 +94,9 @@ The Wild Oasis hotel management app is a full-featured React web application tha
 
 - Dark mode
 
-## Built with
+## My process
+
+### Built with
 
 - React
 - Supabase
@@ -105,7 +108,7 @@ The Wild Oasis hotel management app is a full-featured React web application tha
 - Styled Components
 - Vite
 
-## What I Learned
+### What I Learned
 
 - **React Fundamentals:** I gained a solid understanding of React, including components, state management, and routing, allowing me to build dynamic user interfaces.
 
@@ -139,7 +142,7 @@ The Wild Oasis hotel management app is a full-featured React web application tha
 
 By building "The Wild Oasis" project with these technologies and concepts, I've developed a comprehensive set of skills and knowledge that can be applied to future projects and real-world scenarios. This experience has not only expanded my technical expertise but also improved my problem-solving capabilities.
 
-## Installation
+### Installation
 
 - Clone this repo:
 
@@ -165,7 +168,7 @@ npm run build
 npm run dev
 ```
 
-## Author
+### Author
 
 <b>👤 Alamin</b>
 
@@ -176,6 +179,6 @@ npm run dev
 
 Feel free to contact me with any questions or feedback!
 
-## Acknowledgments
+### Acknowledgments
 
 This app was developed as part of the [Udemy course](https://www.udemy.com/course/the-ultimate-react-course) "The Ultimate React Course 2023: React, Redux & More" by [Jonas Smechmann](https://twitter.com/jonasschmedtman). Special thanks to Jonas for his exceptional teaching and guidance during the course.
