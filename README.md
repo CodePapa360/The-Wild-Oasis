@@ -44,6 +44,15 @@ The Wild Oasis hotel management app is a full-featured React web application tha
 
 </a>
 
+## Table of contents
+
+- [Key Features](#key-features)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
 ## Key Features
 
 - Users of the app are hotel employees. They need to be logged into the application to perform tasks
@@ -167,6 +176,6 @@ npm run dev
 
 Feel free to contact me with any questions or feedback!
 
-## Credits
+## Acknowledgments
 
 This app was developed as part of the [Udemy course](https://www.udemy.com/course/the-ultimate-react-course) "The Ultimate React Course 2023: React, Redux & More" by [Jonas Smechmann](https://twitter.com/jonasschmedtman). Special thanks to Jonas for his exceptional teaching and guidance during the course.
