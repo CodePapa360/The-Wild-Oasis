@@ -13,9 +13,9 @@
   <div align="center">
     <a href="https://the-wild-oasis-alamin.vercel.app">View Demo</a>
     -
-    <a href="issues">Report Bug</a>
+    <a href="./issues">Report Bug</a>
     -
-    <a href="pulls">Request Feature</a>
+    <a href="./pulls">Request Feature</a>
   </div>
 
   <hr>
