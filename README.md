@@ -1,20 +1,32 @@
-<h1 align="center">The Wild Oasis</h1>
+<div align="center">
 
-<h2 align="center">
+  <img src="./public/logo-dark.png" alt="logo" width="60" height="auto">
 
-[🌐Website](https://the-wild-oasis-codepapa.vercel.app)
+  <h2>The Wild Oasis</h2>
 
-</h2>
+  <h3>
+    <a href="https://the-wild-oasis-alamin.vercel.app">
+      <strong>Demo Website</strong>
+    </a>
+  </h3>
+
+  <div align="center">
+    <a href="https://the-wild-oasis-alamin.vercel.app">View Demo</a>
+    -
+    <a href="/issues">Report Bug</a>
+    -
+    <a href="/pulls">Request Feature</a>
+  </div>
+
+  <hr>
+
+</div>
 
 <!-- Badges -->
 <div align="center">
 
 <img src="https://img.shields.io/badge/Status-Completed-success?style=flat" alt="Status" />
 
-<!-- Liceensee -->
-<img src="https://img.shields.io/badge/License-MIT-blue?style=flat" alt="License" />
-
-<br/>
 <a href='https://www.twitter.com/CodePapa360' target="_blank"><img alt='Twitter' src='https://img.shields.io/badge/@CodePapa360-100000?style=for-the-badge&logo=Twitter&logoColor=00C9F7&labelColor=3F3F3F&color=0092FA'/></a>
 <a href='https://www.linkedin.com/in/codepapa360' target="_blank"><img alt='LinkedIn' src='https://img.shields.io/badge/@CodePapa360-100000?style=for-the-badge&logo=LinkedIn&logoColor=00a0dc&labelColor=2F2F2F&color=0077b5'/></a>
 
@@ -22,7 +34,7 @@
 
 <!-- Brief -->
 <p align="center">
-
+This is a demo briefing 
 </p>
 
 <!-- Screenshot -->
