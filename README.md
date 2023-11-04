@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./public/logo-dark.png" alt="logo" width="60" height="auto">
+  <img src="./public/logo-dark.png" alt="logo" width="90" height="auto">
 
   <h2>The Wild Oasis</h2>
 
@@ -13,9 +13,9 @@
   <div align="center">
     <a href="https://the-wild-oasis-alamin.vercel.app">View Demo</a>
     -
-    <a href="/issues">Report Bug</a>
+    <a href="issues">Report Bug</a>
     -
-    <a href="/pulls">Request Feature</a>
+    <a href="pulls">Request Feature</a>
   </div>
 
   <hr>
