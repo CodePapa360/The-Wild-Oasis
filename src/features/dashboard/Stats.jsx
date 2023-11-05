@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { formatCurrency } from "../../utils/helpers";
 import Stat from "./Stat";
 
@@ -7,6 +8,14 @@ import {
   HiOutlineCalendarDays,
   HiOutlineChartBar,
 } from "react-icons/hi2";
+
+const StyledStates = styled.div`
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+`;
 
 function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   // 1.
@@ -25,7 +34,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
     (numDays * cabinCount);
 
   return (
-    <>
+    <StyledStates>
       <Stat
         title="Bookings"
         color="blue"
@@ -50,7 +59,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
         icon={<HiOutlineChartBar />}
         value={Math.round(occupation * 100) + "%"}
       />
-    </>
+    </StyledStates>
   );
 }
 

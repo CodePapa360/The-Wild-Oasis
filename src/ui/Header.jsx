@@ -13,12 +13,6 @@ const StyledHeader = styled.header`
   justify-content: flex-end;
 `;
 
-const HamburgerButton = styled.button`
-  background-color: transparent;
-  padding: 0.5rem 1rem;
-  border: none;
-`;
-
 function Header() {
   return (
     <StyledHeader>

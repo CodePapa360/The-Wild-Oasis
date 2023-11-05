@@ -9,10 +9,25 @@ import DurationChart from "./DurationChart";
 import TodayActivity from "../check-in-out/TodayActivity";
 
 const StyledDashboardLayout = styled.div`
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: auto auto auto; */
+  /* gap: 2.4rem; */
+`;
+
+const Charts = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2.4rem;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-areas: "today duration"; */
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 990px) {
+    /* grid-template-areas:
+      "today"
+      "duration"; */
+    grid-template-columns: 1fr;
+  }
 `;
 
 function DashboardLayout() {
@@ -30,8 +45,10 @@ function DashboardLayout() {
         numDays={numDays}
         cabinCount={cabins.length}
       />
-      <TodayActivity />
-      <DurationChart confirmedStays={confirmedStays} />
+      <Charts>
+        <TodayActivity />
+        <DurationChart confirmedStays={confirmedStays} />
+      </Charts>
       <SalesChart bookings={bookings} numDays={numDays} />
     </StyledDashboardLayout>
   );
