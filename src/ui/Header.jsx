@@ -16,7 +16,6 @@ const StyledHeader = styled.header`
 function Header() {
   return (
     <StyledHeader>
-      <button>Test</button>
       <UserAvatar />
       <HeaderMenu />
     </StyledHeader>

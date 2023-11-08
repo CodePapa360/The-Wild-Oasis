@@ -22,7 +22,7 @@ function Sideber() {
       <Logo />
       <MainNav />
 
-      {/* <Uploader /> */}
+      <Uploader />
       <SocialLinks />
     </StyledSideber>
   );

@@ -44,32 +44,29 @@ export async function logout() {
 }
 
 export async function updateCurrentUser({ password, fullName, avatar }) {
-  //1. Update password OR fullname
-  let updateData;
-  if (password) updateData = { password };
-  if (fullName) updateData = { data: { fullName } };
+  // Turned off updating feature for publicly. You should remove this error and uncomment the rest of the codes to try with your own supabase account.
+  throw new Error("Profile updates are not allowed temporarily");
 
-  const { data, error } = await supabase.auth.updateUser(updateData);
-
-  if (error) throw new Error(error.message);
-  if (!avatar) return data;
-
-  //2. Upload the avatar image
-  const fileName = `avatar-${data.user.id}-${Math.random()}`;
-
-  const { error: storageError } = await supabase.storage
-    .from("avatars")
-    .upload(fileName, avatar);
-  if (storageError) throw new Error(storageError.message);
-
-  //3. Update the avatar in the user
-  const { data: updatedUser, error: error2 } = await supabase.auth.updateUser({
-    data: {
-      avatar: `${supabaseUrl}/storage/v1/object/public/avatars/${fileName}`,
-    },
-  });
-
-  if (error2) throw new Error(error2.message);
-
-  return updatedUser;
+  //////////////////////////////
+  // //1. Update password OR fullname
+  // let updateData;
+  // if (password) updateData = { password };
+  // if (fullName) updateData = { data: { fullName } };
+  // const { data, error } = await supabase.auth.updateUser(updateData);
+  // if (error) throw new Error(error.message);
+  // if (!avatar) return data;
+  // //2. Upload the avatar image
+  // const fileName = `avatar-${data.user.id}-${Math.random()}`;
+  // const { error: storageError } = await supabase.storage
+  //   .from("avatars")
+  //   .upload(fileName, avatar);
+  // if (storageError) throw new Error(storageError.message);
+  // //3. Update the avatar in the user
+  // const { data: updatedUser, error: error2 } = await supabase.auth.updateUser({
+  //   data: {
+  //     avatar: `${supabaseUrl}/storage/v1/object/public/avatars/${fileName}`,
+  //   },
+  // });
+  // if (error2) throw new Error(error2.message);
+  // return updatedUser;
 }
