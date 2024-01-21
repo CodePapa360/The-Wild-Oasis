@@ -5,7 +5,7 @@ import MainNav from "./MainNav";
 import Uploader from "../data/Uploader";
 import SocialLinks from "./SocialLinks";
 
-const StyledSideber = styled.aside`
+const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
   padding: 3.2rem 2.4rem;
   border-right: 1px solid var(--color-grey-100);
@@ -16,16 +16,16 @@ const StyledSideber = styled.aside`
   gap: 3.2rem;
 `;
 
-function Sideber() {
+function Sidebar() {
   return (
-    <StyledSideber>
+    <StyledSidebar>
       <Logo />
       <MainNav />
 
       <Uploader />
       <SocialLinks />
-    </StyledSideber>
+    </StyledSidebar>
   );
 }
 
-export default Sideber;
+export default Sidebar;
