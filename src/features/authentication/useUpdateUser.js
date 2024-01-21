@@ -9,7 +9,7 @@ export function useUpdateUser() {
     mutationFn: updateCurrentUser,
     onSuccess: ({ user }) => {
       toast.success("User account successfully updated.");
-      quryClient.setQueriesData(["user"], user);
+      queryClient.setQueriesData(["user"], user);
     },
     onError: (err) => toast.error(err.message),
   });
