@@ -6,7 +6,8 @@ import { subtractDates } from "../utils/helpers";
 
 import { bookings } from "./data-bookings";
 import { cabins } from "./data-cabins";
-import { guests } from "./data-guests";
+import { useDarkMode } from "../context/DarkModeContext";
+import styled from "styled-components";
 
 // const originalSettings = {
 //   minBookingLength: 3,
@@ -15,28 +16,19 @@ import { guests } from "./data-guests";
 //   breakfastPrice: 15,
 // };
 
-async function deleteGuests() {
-  const { error } = await supabase.from("guests").delete().gt("id", 0);
-  if (error) console.log(error.message);
-}
-
-async function deleteCabins() {
-  const { error } = await supabase.from("cabins").delete().gt("id", 0);
-  if (error) console.log(error.message);
-}
+const StyledUploader = styled.div`
+  margin-top: auto;
+  background-color: var(--color-silver-100);
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
 
 async function deleteBookings() {
   const { error } = await supabase.from("bookings").delete().gt("id", 0);
-  if (error) console.log(error.message);
-}
-
-async function createGuests() {
-  const { error } = await supabase.from("guests").insert(guests);
-  if (error) console.log(error.message);
-}
-
-async function createCabins() {
-  const { error } = await supabase.from("cabins").insert(cabins);
   if (error) console.log(error.message);
 }
 
@@ -101,22 +93,8 @@ async function createBookings() {
 }
 
 function Uploader() {
+  const { isDarkMode } = useDarkMode();
   const [isLoading, setIsLoading] = useState(false);
-
-  async function uploadAll() {
-    setIsLoading(true);
-    // Bookings need to be deleted FIRST
-    await deleteBookings();
-    await deleteGuests();
-    await deleteCabins();
-
-    // Bookings need to be created LAST
-    await createGuests();
-    await createCabins();
-    await createBookings();
-
-    setIsLoading(false);
-  }
 
   async function uploadBookings() {
     setIsLoading(true);
@@ -126,28 +104,13 @@ function Uploader() {
   }
 
   return (
-    <div
-      style={{
-        marginTop: "auto",
-        backgroundColor: "#e0e7ff",
-        padding: "8px",
-        borderRadius: "5px",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        gap: "8px",
-      }}
-    >
+    <StyledUploader>
       <h3>SAMPLE DATA</h3>
 
-      <Button onClick={uploadAll} disabled={isLoading}>
-        Upload ALL
-      </Button>
-
       <Button onClick={uploadBookings} disabled={isLoading}>
-        Upload bookings ONLY
+        Upload bookings
       </Button>
-    </div>
+    </StyledUploader>
   );
 }
 
