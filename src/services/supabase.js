@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { createClient } from "@supabase/supabase-js";
 
 export const supabaseUrl = process.env.SUPABASE_URL;
