@@ -128,7 +128,7 @@ function Uploader() {
 
   return (
     <StyledUploader>
-      <h3>SAMPLE DATAsss</h3>
+      <h3>SAMPLE DATA</h3>
 
       <Button onClick={uploadAll} disabled={isLoading}>
         Upload ALL
